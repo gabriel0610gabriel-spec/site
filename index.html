@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPUS STORE</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial;
+    }
+
+    body{
+      background:#07000f;
+      color:white;
+    }
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:25px 60px;
+      border-bottom:1px solid #2a1044;
+      position:sticky;
+      top:0;
+      background:#07000f;
+    }
+
+    .logo{
+      font-size:35px;
+      font-weight:bold;
+      color:#a855f7;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:25px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#a855f7;
+    }
+
+    .hero{
+      height:90vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
+      text-align:center;
+      padding:20px;
+      background:linear-gradient(to bottom,#07000f,#12001f);
+    }
+
+    .hero h1{
+      font-size:90px;
+      margin-bottom:20px;
+      color:#c084fc;
+      text-shadow:0 0 25px #9333ea;
+    }
+
+    .hero p{
+      color:#cfcfcf;
+      max-width:700px;
+      margin-bottom:30px;
+      font-size:20px;
+    }
+
+    .btn{
+      padding:15px 40px;
+      border:none;
+      background:#9333ea;
+      color:white;
+      font-size:18px;
+      font-weight:bold;
+      border-radius:15px;
+      cursor:pointer;
+      transition:0.3s;
+      box-shadow:0 0 20px #9333ea66;
+    }
+
+    .btn:hover{
+      transform:scale(1.05);
+      background:#a855f7;
+    }
+
+    .products{
+      padding:100px 50px;
+    }
+
+    .title{
+      text-align:center;
+      font-size:50px;
+      margin-bottom:60px;
+      color:#c084fc;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:#12001f;
+      border:1px solid #2a1044;
+      padding:30px;
+      border-radius:25px;
+      transition:0.3s;
+      box-shadow:0 0 20px #00000055;
+    }
+
+    .card:hover{
+      border-color:#9333ea;
+      transform:translateY(-5px);
+      box-shadow:0 0 25px #9333ea44;
+    }
+
+    .card h2{
+      margin-bottom:15px;
+      color:#c084fc;
+    }
+
+    .price{
+      font-size:40px;
+      font-weight:bold;
+      margin:20px 0;
+      color:#a855f7;
+    }
+
+    footer{
+      text-align:center;
+      padding:40px;
+      border-top:1px solid #2a1044;
+      color:#888;
+      margin-top:60px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">OPUS</div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Produtos</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+
+    <h1>OPUS STORE</h1>
+
+    <p>
+      Loja gamer premium com visual moderno e estilo roxo neon.
+    </p>
+
+    <button class="btn">Comprar Agora</button>
+
+  </section>
+
+  <section class="products">
+
+    <h1 class="title">Produtos</h1>
+
+    <div class="cards">
+
+      <div class="card">
+        <h2>Pacote Bronze</h2>
+
+        <p>Pacote básico com acesso inicial.</p>
+
+        <div class="price">R$49,90</div>
+
+        <button class="btn">Comprar</button>
+      </div>
+
+      <div class="card">
+        <h2>Pacote Prata</h2>
+
+        <p>Mais recursos e suporte prioritário.</p>
+
+        <div class="price">R$89,90</div>
+
+        <button class="btn">Comprar</button>
+      </div>
+
+      <div class="card">
+        <h2>Pacote Ouro</h2>
+
+        <p>Experiência completa premium.</p>
+
+        <div class="price">R$149,90</div>
+
+        <button class="btn">Comprar</button>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 OPUS STORE - Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
